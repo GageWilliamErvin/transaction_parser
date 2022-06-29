@@ -1,0 +1,15 @@
+[package]
+name = "transaction_parser"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+csv-async = { version = "1.2.4", features = ["with_serde", "tokio"]}
+rust_decimal = "1.25.0"
+rust_decimal_macros = "1.25"
+serde = { version = "1.0.137", features = ["derive"] }
+tempfile = "3.3.0"
+tokio = { version = "1", features = ["rt-multi-thread", "macros", "io-std", "sync", "time"] }
+tokio-stream = "0.1.9"
